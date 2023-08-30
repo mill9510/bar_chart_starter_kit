@@ -1,8 +1,5 @@
+//parrent
 const list = document.querySelector("ul");
-
-//const li = document.createElement("li");
-//li.style.setProperty("--height", "30");
-//list.appendChild(li);
 
 const valueArray = [];
 
@@ -13,6 +10,7 @@ function generateBarCharts() {
 
   const li = document.createElement("li");
   li.style.setProperty("--height", randomNum);
+  // child til list
   list.appendChild(li);
 
   valueArray.push(randomNum);
@@ -22,5 +20,5 @@ function generateBarCharts() {
     list.removeChild(list.firstChild);
   }
 
-  console.log("function", valueArray);
+  console.log("value", valueArray);
 }
